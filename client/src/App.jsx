@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom"
+import {BrowserRouter, Route, Routes } from "react-router-dom"
 import Items from "./Items"
 import CreateItem from "./CreateItem"
 import UpdateItem from "./UpdateItem"
@@ -10,7 +10,7 @@ function App() {
               <Routes>
                   <Route path="/" element={ <Items /> }/>
                   <Route path="/create" element={ <CreateItem /> }/>
-                  <Route path="/update" element={ <UpdateItem /> }/>
+                  <Route path="/update/:id" element={ <UpdateItem /> }/>
               </Routes>
       </BrowserRouter>
     </>
