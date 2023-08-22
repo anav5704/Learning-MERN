@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 // initialize schema
-const itemSchema = new mongoose.schema({
+const itemSchema = new mongoose.Schema({
     name: String,
     discepline : String
 })
@@ -9,4 +9,4 @@ const itemSchema = new mongoose.schema({
 // first param is collection name and second param in schema for that collection
 const itemModel = mongoose.model("Items", itemSchema)
 
-module.exports = itemModel
+export default itemModel
