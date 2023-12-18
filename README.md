@@ -1,1 +1,1 @@
-> Nothing much, just me learning Express JS
+> Nothing much, just me learning MERN
